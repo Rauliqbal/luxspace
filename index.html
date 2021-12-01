@@ -4,13 +4,17 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Luxspace - The Best Home Furnitures</title>
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
 
         <!-- Style CSS -->
         <link rel="stylesheet" href="css/main.css" />
+        <!-- Library Lightslider -->
+        <link rel="stylesheet" href="vendor/css/lightslider.css" />
+        <script type="text/javascript" src="vendor/js/jquery-3.5.1.min.js"></script>
+        <script src="vendor/js/lightslider.js"></script>
     </head>
     <body>
         <!-- START:Navbar -->
@@ -79,69 +83,83 @@
                 </div>
                 <div class="category-card">
                     <div class="row g-3">
-                        <div class="col-12 col-lg-5">
+                        <div class="col-12 col-md-5 col-lg-5">
                             <div class="row g-3">
                                 <div class="col-12 position-relative">
-                                    <a href="">
-                                        <img class="w-100" src="images/content/image-catalog-1.jpg" alt="" />
-                                        <div class="overlay mb-auto pe-5">
-                                            <h5>Living Room</h5>
-                                            <span>18,309 items</span>
-                                        </div>
-                                    </a>
+                                    <div class="card-box">
+                                        <a href="">
+                                            <img class="w-100" src="images/content/image-catalog-1.jpg" alt="" />
+                                            <div class="overlay mb-auto pe-5">
+                                                <h5>Living Room</h5>
+                                                <span>18,309 items</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
 
                                 <div class="col-12 position-relative">
-                                    <a href="">
-                                        <img class="w-100" src="images/content/image-catalog-2.jpg" alt="" />
-                                        <div class="overlay mb-auto pe-5">
-                                            <h5>Living Room</h5>
-                                            <span>18,309 items</span>
-                                        </div>
-                                    </a>
+                                    <div class="card-box">
+                                        <a href="">
+                                            <img class="w-100" src="images/content/image-catalog-2.jpg" alt="" />
+                                            <div class="overlay mb-auto pe-5">
+                                                <h5>Living Room</h5>
+                                                <span>18,309 items</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-5 d-sm-block d-lg-none">
+                        <div class="col-12 col-md-5 d-md-none d-sm-block d-lg-none">
                             <div class="row g-3">
                                 <div class="col-12 position-relative">
-                                    <a href="">
-                                        <img class="w-100" src="images/content/image-catalog-4-M.jpg" alt="" />
-                                        <div class="overlay mb-auto pe-5">
-                                            <h5>Living Room</h5>
-                                            <span>18,309 items</span>
-                                        </div>
-                                    </a>
+                                    <div class="card-box">
+                                        <a href="">
+                                            <img class="w-100" src="images/content/image-catalog-4-M.jpg" alt="" />
+                                            <div class="overlay mb-auto pe-5">
+                                                <h5>Living Room</h5>
+                                                <span>18,309 items</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
 
                                 <div class="col-12 position-relative">
-                                    <a href="">
-                                        <img class="w-100" src="images/content/image-catalog-3-M.jpg" alt="" />
-                                        <div class="overlay mb-auto pe-5">
-                                            <h5>Living Room</h5>
-                                            <span>18,309 items</span>
-                                        </div>
-                                    </a>
+                                    <div class="card-box">
+                                        <a href="">
+                                            <img class="w-100" src="images/content/image-catalog-3-M.jpg" alt="" />
+                                            <div class="overlay mb-auto pe-5">
+                                                <h5>Living Room</h5>
+                                                <span>18,309 items</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Mobile -->
 
-                        <div class="col-4 col-lg-3 desk-ver d-none d-lg-block position-relative">
-                            <a href="">
-                                <img class="h-100" src="images/content/image-catalog-4.jpg" alt="" />
-                                <div class="overlay-desk text-center align-items-center mx-auto">
-                                    <h5>Living Room</h5>
-                                    <span>18,309 items</span>
-                                </div>
-                            </a>
+                        <div class="col-4 col-md-3 col-lg-3 desk-ver d-none d-md-block d-lg-block position-relative">
+                            <div class="card-box h-100">
+                                <a href="">
+                                    <img class="h-100" src="images/content/image-catalog-4.jpg" alt="" />
+                                    <div class="overlay-desk text-center align-items-center mx-auto">
+                                        <h5>Living Room</h5>
+                                        <span>18,309 items</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-lg-4 desk-ver d-none d-lg-block position-relative">
-                            <a href=""> <img class="h-100" src="images/content/image-catalog-3.jpg" alt="" /></a>
-                            <div class="overlay-desk text-center align-items-center mx-auto">
-                                <h5>Living Room</h5>
-                                <span>18,309 items</span>
+                        <div class="col-12 col-md-4 col-lg-4 desk-ver d-none d-md-block d-lg-block position-relative">
+                            <div class="card-box h-100">
+                                <a href="">
+                                    <img class="h-100" src="images/content/image-catalog-3.jpg" alt="" />
+                                    <div class="overlay-desk text-center align-items-center mx-auto">
+                                        <h5>Living Room</h5>
+                                        <span>18,309 items</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -150,7 +168,71 @@
         </section>
         <!-- END:Category -->
 
-        <!-- Bootstrap JS -->
+        <!-- START:Product  -->
+        <section class="product">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="text-center">
+                        Just Arrived <br />
+                        This Summer For You
+                    </h2>
+                </div>
+                <!-- Slider -->
+                <ul id="autoWidth" class="cs-hidden">
+                    <li class="item-a">
+                        <div class="card-product">
+                            <img src="images/content/img-carousel-1.jpg" class="card-img" alt="..." />
+                            <div class="card-content">
+                                <h3>Cangkir Kopi</h3>
+                                <span>IDR 89.300.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-b">
+                        <div class="card-product">
+                            <img src="images/content/img-carousel-2.jpg" class="card-img" alt="..." />
+                            <div class="card-content">
+                                <h3>Cangkir Kopi</h3>
+                                <span>IDR 89.300.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="card-product">
+                            <img src="images/content/img-carousel-3.jpg" class="card-img" alt="..." />
+                            <div class="card-content">
+                                <h3>Cangkir Kopi</h3>
+                                <span>IDR 89.300.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="card-product">
+                            <img src="images/content/img-carousel-4.jpg" class="card-img" alt="..." />
+                            <div class="card-content">
+                                <h3>Cangkir Kopi</h3>
+                                <span>IDR 89.300.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="card-product">
+                            <img src="images/content/img-carousel-5.jpg " class="card-img" alt="..." />
+                            <div class="card-content">
+                                <h3>Cangkir Kopi</h3>
+                                <span>IDR 89.300.000</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- END:Product -->
+
+        <!-- lightslider -->
+        <script src="js/slider.js"></script>
+        <!-- vendor JS -->
+
         <script src="vendor/js/bootstrap.min.js"></script>
     </body>
 </html>

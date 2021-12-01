@@ -23,6 +23,11 @@ section {
   background-color: #000000;
 }
 
+.section-title h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
 .navbar-ls {
   z-index: 2;
 }
@@ -69,53 +74,55 @@ section {
   background-color: #f9f9f9;
 }
 
-.category .section-title h2 {
-  font-size: 22px;
-  font-weight: 600;
-}
-
 .category .category-card {
   margin-top: 30px;
 }
 
-.category .category-card .overlay {
+.category .category-card .card-box {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 180px;
+}
+
+.category .category-card .card-box:hover img {
+  -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category .category-card .card-box .overlay {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   top: 0;
   right: 0;
   bottom: 0;
-  padding-left: 32px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.category .category-card .overlay h5,
-.category .category-card .overlay span {
+.category .category-card .card-box .overlay h5,
+.category .category-card .card-box .overlay span {
   color: #000000;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 34%;
 }
 
-.category .category-card img {
+.category .category-card .card-box img {
   border-radius: 16px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
-  height: 180px;
-}
-
-.category .category-card img:hover {
-  -webkit-filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
-          filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
+  height: 100%;
 }
 
 .category .desk-ver .overlay-desk {
@@ -126,7 +133,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 24px;
+  top: 40px;
   right: 0;
   left: 0;
 }
@@ -135,6 +142,27 @@ section {
 .category .desk-ver .overlay-desk span {
   color: #000000;
   font-size: 18px;
+  font-weight: 500;
+}
+
+.product .card-product {
+  margin-top: 30px;
+  width: 287px;
+}
+
+.product .card-product .card-img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.product .card-product .card-content {
+  padding: 10px 10px;
+  margin-top: 10px;
+}
+
+.product .card-product .card-content h3 {
+  font-size: 22px;
+  font-weight: 600;
 }
 
 @media (min-width: 522px) {
@@ -147,6 +175,10 @@ section {
 }
 
 @media (min-width: 992px) {
+  .section-title h2 {
+    font-size: 28px;
+    font-weight: 600;
+  }
   .hero .content h1 {
     font-size: 48px;
   }
@@ -157,9 +189,37 @@ section {
     margin-top: -120px;
     height: 70vh;
   }
+  .category .category-card .card-box {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 100%;
+  }
   .category .category-card .overlay h5,
   .category .category-card .overlay span {
     font-size: 18px;
   }
+}
+
+.demo {
+  width: 450px;
+}
+
+ul {
+  list-style: none outside none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+li {
+  display: block;
+  float: left;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

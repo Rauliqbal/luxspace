@@ -28,7 +28,12 @@ section {
         background-color: $black;
     }
 }
-
+.section-title {
+    h2 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+}
 .navbar-ls {
     z-index: 2;
 }
@@ -76,41 +81,41 @@ section {
 .category {
     background-color: #f9f9f9;
 
-    .section-title {
-        h2 {
-            font-size: 22px;
-            font-weight: 600;
-        }
-    }
     .category-card {
         margin-top: 30px;
 
-        .overlay {
-            position: absolute;
-            z-index: 3;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            padding-left: 32px;
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-
-            h5,
-            span {
-                color: $black;
-                font-size: 16px;
-            }
-        }
-        img {
-            border-radius: 16px;
+        .card-box {
             transition: all 0.3s;
-            object-fit: cover;
-            max-width: 100%;
             height: 180px;
 
-            &:hover {
-                filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
+            &:hover img {
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .overlay {
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                h5,
+                span {
+                    color: $black;
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 34%;
+                }
+            }
+            img {
+                border-radius: 16px;
+                transition: all 0.3s;
+                object-fit: cover;
+                max-width: 100%;
+                height: 100%;
             }
         }
     }
@@ -121,7 +126,7 @@ section {
             z-index: 3;
             padding: 0 20px 110px 0;
             flex-direction: column;
-            top: 24px;
+            top: 40px;
             right: 0;
             left: 0;
 
@@ -129,6 +134,26 @@ section {
             span {
                 color: $black;
                 font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.product {
+    .card-product {
+        margin-top: 30px;
+        width: 287px;
+        .card-img {
+            width: 100%;
+            border-radius: 24px;
+        }
+        .card-content {
+            padding: 10px 10px;
+            margin-top: 10px;
+            h3 {
+                font-size: 22px;
+                font-weight: 600;
             }
         }
     }
@@ -149,6 +174,12 @@ section {
 
 // Web Desktop
 @media (min-width: 992px) {
+    .section-title {
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+        }
+    }
     .hero {
         .content {
             h1 {
@@ -167,6 +198,11 @@ section {
 
     .category {
         .category-card {
+            .card-box {
+                transition: all 0.3s;
+                height: 100%;
+            }
+
             .overlay {
                 h5,
                 span {
@@ -175,4 +211,24 @@ section {
             }
         }
     }
+}
+
+.demo {
+    width: 450px;
+}
+ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor: pointer;
+}
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
 }
