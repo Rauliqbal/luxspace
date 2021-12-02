@@ -172,6 +172,10 @@ section {
   font-weight: 600;
 }
 
+.sponsor img {
+  padding: 10px 20px;
+}
+
 @media (min-width: 522px) {
   .hero .content p {
     width: 45%;
@@ -205,28 +209,5 @@ section {
   .category .category-card .overlay span {
     font-size: 18px;
   }
-}
-
-.demo {
-  width: 450px;
-}
-
-ul {
-  list-style: none outside none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-li {
-  display: block;
-  float: left;
-  margin-right: 6px;
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
