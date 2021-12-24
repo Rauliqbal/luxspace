@@ -194,6 +194,15 @@ footer {
     ul {
         li {
             list-style: none;
+
+            a {
+                color: $black;
+                transition: all 0.3s;
+
+                &:hover {
+                    color: darken($primary, 10%);
+                }
+            }
         }
     }
 
@@ -204,6 +213,9 @@ footer {
         background-color: $primary;
         padding: 10px 18px;
     }
+}
+hr {
+    margin: auto;
 }
 // Tablet Version
 @media (min-width: 522px) {
